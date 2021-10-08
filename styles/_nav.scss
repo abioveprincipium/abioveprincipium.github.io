@@ -1,6 +1,6 @@
 header{
-    background: orange;
     width: 100%;
+    position: relative;
 }
 nav{
     display: none;
@@ -16,8 +16,14 @@ nav{
         display: block;
     }
 }
+.burger_label{
+    position: absolute;
+    right:1rem;
+    top:0.5rem;
+}
 
-@media screen and (min-width:768px){
+
+@media screen and (min-width:769px){
     .burger_label{
         display: none;
     }
