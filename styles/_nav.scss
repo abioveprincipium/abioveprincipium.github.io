@@ -1,12 +1,37 @@
 header{
     background: orange;
-    position: fixed;
     width: 100%;
 }
 nav{
+    display: none;
     ol{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-content: center;
+    }
+}
+.burger{
+    display: none;
+    &:checked ~ nav{
+        display: block;
+    }
+}
+
+@media screen and (min-width:768px){
+    .burger_label{
+        display: none;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .e_list{
+            list-style: none;
+            margin-right: 5rem;
+        }
     }
 }

@@ -28,18 +28,57 @@
 
 header {
   background: orange;
-  position: fixed;
   width: 100%;
+}
+
+nav {
+  display: none;
 }
 
 nav ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+.burger {
+  display: none;
+}
+
+.burger:checked ~ nav {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .burger_label {
+    display: none;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .e_list {
+    list-style: none;
+    margin-right: 5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
