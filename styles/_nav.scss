@@ -1,0 +1,12 @@
+header{
+    background: orange;
+    position: fixed;
+    width: 100%;
+}
+nav{
+    ol{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+}
