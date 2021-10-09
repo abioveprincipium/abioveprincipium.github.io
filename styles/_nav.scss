@@ -12,18 +12,44 @@ nav{
 }
 .burger{
     display: none;
-    &:checked ~ nav{
-        display: block;
-    }
+        &:checked ~ nav{
+            display: block;
+        }
+        &:checked ~ .burger_label .icon::before{
+            transform: rotate(-45deg);
+            top:7px;
+        }
+        &:checked ~ .burger_label .icon::after{
+            transform: rotate(45deg);
+            top:7px;
+        }
 }
 .burger_label{
     position: absolute;
     right:1rem;
-    top:0.5rem;
+    top:1rem;
+    height: 34px;
+    width: 34px;
+    cursor: pointer;
+    display: block;
+}
+.icon{
+    width: 40px;
+    height: 2px;
+    background: transparent;
+    display: block;
+    position: relative;
+        &::before{
+            @include burger_icon();
+            top:3px;
+        }
+        &::after{
+            @include burger_icon();
+            bottom:3px;
+        }
 }
 
-
-@media screen and (min-width:769px){
+@media screen and (min-width:767px){
     .burger_label{
         display: none;
     }
