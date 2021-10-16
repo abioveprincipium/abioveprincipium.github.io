@@ -1,29 +1,41 @@
 <!DOCTYPE html>
-<html lang="pl"\>
+<html lang="pl">
   <head>
-    <meta charset="utf-8"\>
-    <meta name="description" content="#"\>
-    <meta name="keywords" content="#"\>
-    <meta name="author" content="AJG"\>
-    <meta name="copyright" content="copyright AJG"\>
-    <meta name="robots" content="follow"\>
+    <meta charset="utf-8">
+    <meta name="description" content="#">
+    <meta name="keywords" content="#">
+    <meta name="author" content="AJG">
+    <meta name="copyright" content="copyright AJG">
+    <meta name="robots" content="follow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles/style.css"\>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="shortcut icon" href="favicon.ico">
     <title>Alicja Grądys</title>
+    <style>
+<!--Snap scroll behavior does not work in sass
+.content{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+}
+section {
+        scroll-snap-align: center;
+}
+    </style>
   </head>
   <body>
     <div class="content">
-      <section class="first" id="first_s">
+      <section class="first" id="first">
         <header>
-          <a id="link_f" ><img class="logo" src="img/logo.png" alt="logo"/></a>
-          <input type="checkbox" class="burger" id="burger"\>
+          <a href="#about"><img class="logo" src="img/logo.png" alt="logo"/></a>
+          <input type="checkbox" class="burger" id="burger">
           <label for="burger" class="burger_label">
             <span class="icon"></span>
           </label>
           <nav>
             <ol>
-              <li class="e_list"><a href="#">About</a></li>
+              <li class="e_list"><a href="#about">About</a></li>
               <li class="e_list"><a href="#">Portfolio</a></li>
               <li class="e_list"><a href="#">Contact</a></li>
             </ol>
@@ -32,27 +44,10 @@
           <h1>Prezentacja</h1>
       </section>
 
-      <section class="second" id="second_s">
-        <a id="link_s"><img class="logo" src="img/logo.png" alt="logo"/></a>
+      <section class="second" id="about">
+        <a href="#first"><img class="logo" src="img/logo.png" alt="logo"/></a>
         <h1>Opis </h1>
       </section>
     </div>
-    <script >
-      function scrollTo(element) {
-          window.scroll({
-          behavior: 'smooth',
-          left: 0,
-          top: element.offsetTop
-          });
-      }
-
-      document.getElementById("link_f").addEventListener('click', () => {
-        scrollTo(document.getElementById("second_s"));
-      });
-
-      document.getElementById("link_s").addEventListener('click', () => {
-        scrollTo(document.getElementById("first_s"));
-      });
-    </script>
   </body>
 </html>

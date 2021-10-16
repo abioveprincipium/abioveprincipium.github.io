@@ -3,23 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
+body{
+    height: 100vh;
+    line-height: 1.6;
+    overflow: hidden;
 }
 .content{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
     height: 100vh;
-    scroll-behavior: smooth;
-        section{
-        height: 100vh;
-        color:white;
-        scroll-snap-align: start;
+    section {
+        width:100%;
+            height: 100vh;
+            color:white;
     }
 }
-    .first{
-            background: green;
-    }
-    .second{
-            background: purple;
-    }
+
+.first{
+    background: green;
+}
+.second{
+    background: purple;
+}
