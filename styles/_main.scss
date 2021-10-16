@@ -10,29 +10,24 @@ body{
 }
 .content{
     height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
     section {
         width:100%;
             height: 100vh;
             color:white;
+            scroll-snap-align: center;
     }
 }
-//scroll behavior does not work in sass, you will find it in html file at styles.
-.content{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+.first_sec{
+    background: linear-gradient(224.99deg, #751C68 1.47%, #48083F 27.05%, #290327 75.55%, #000000 142.37%);
+}
+.second_sec{
+    background: linear-gradient(224.99deg, #6C1F61 -48.9%, #48083F -26.42%, #290327 25.35%, #000000 92.24%);
+}
 
-}
-section {
-        scroll-snap-align: center;
-}
-//
-.first{
-    background: green;
-}
-.second{
-    background: purple;
-}
+
 .main{
     display: flex;
     justify-content: center;
