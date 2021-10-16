@@ -17,9 +17,33 @@ body{
     }
 }
 //scroll behavior does not work in sass, you will find it in html file at styles.
+.content{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+}
+section {
+        scroll-snap-align: center;
+}
+//
 .first{
     background: green;
 }
 .second{
     background: purple;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_photo{
+    transform: translateX(10%);
 }

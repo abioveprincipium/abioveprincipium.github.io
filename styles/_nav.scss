@@ -67,3 +67,12 @@ nav{
         }
     }
 }
+@media screen and (max-width:768px){
+    .main_photo{
+        width: 110%;
+        transform: translateX(5%);
+    }
+    .glitch-photo{
+        display: none;
+    }
+}
