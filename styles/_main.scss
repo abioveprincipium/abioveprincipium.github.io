@@ -7,12 +7,14 @@ body{
     height: 100vh;
     line-height: 1.6;
     overflow: hidden;
+    background: linear-gradient(224.99deg, #751C68 1.47%, #48083F 27.05%, #290327 75.55%, #000000 142.37%);
 }
 .content{
     height: 100vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    overflow-x: hidden;
     section {
         width:100%;
             height: 100vh;
