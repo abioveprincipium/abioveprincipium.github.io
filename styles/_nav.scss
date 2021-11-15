@@ -8,6 +8,16 @@ nav{
         display: flex;
         justify-content: space-around;
         align-content: center;
+        a{
+            color: #FFFFFF;
+            font-family: 'Prata', serif;
+            font-size: 20px;
+            line-height: 32px;
+            text-indent: 5px;
+            text-transform: uppercase;
+            font-feature-settings: 'pnum' on, 'onum' on;
+            text-decoration: none;
+        }
     }
 }
 .burger{
