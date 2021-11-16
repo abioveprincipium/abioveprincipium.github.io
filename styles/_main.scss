@@ -37,6 +37,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    height: 90vh;
     h1{
         font-family: 'Prata', serif;;
         font-size: 25px;
@@ -49,6 +51,45 @@ body{
         color: #FFFFFF;
         transform: translateX(5%);
     }
+    .side_nav{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        right: 3%;
+        font-size: 2.7rem;
+        a{
+        color: #ffffff69;
+        text-decoration: none;}
+        :first-child{
+            color: #FFFFFF;
+        }
+    }
+    .social{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        font-variant: small-caps;
+        font-family: Baskervville;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        text-align: center;
+        text-indent: 5px;
+        font-feature-settings: 'pnum' on, 'onum' on;
+        color: #FFFFFF;
+        transform: rotate(-90deg);
+        left:-10%;
+        bottom: 30%;
+        li{
+            margin-right: 10%;
+            a{
+                color: #ffffff;
+                text-decoration: none;}
+        }
+    }
 }
 .main_photo{
     transform: translateX(10%);
@@ -57,6 +98,12 @@ body{
     .main{
         h1{
             line-height: 50px;
+        }
+        .social{
+            transform: rotate(0deg);
+            left:3%;
+            bottom: 0;
+            font-size: 15px;
         }
     }
 }
