@@ -35,6 +35,7 @@ body {
 }
 
 .second_sec {
+  position: relative;
   background: linear-gradient(224.99deg, #6C1F61 -48.9%, #48083F -26.42%, #290327 25.35%, #000000 92.24%);
 }
 
@@ -165,6 +166,61 @@ body {
     width: auto;
     margin-bottom: 3%;
   }
+}
+
+.horbar {
+  position: absolute;
+  color: #FFFFFF;
+  left: 50vw;
+  top: 3%;
+  text-decoration: none;
+  width: 10vw;
+  border-bottom: 0.5px  solid #FFFFFF;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+
+h2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 4%;
+  letter-spacing: 1.7rem;
+  font-variant: small-caps;
+  font-size: 25px;
+  line-height: 23px;
+  text-indent: 5px;
+  font-family: 'Prata', serif;
+}
+
+h2 :first-child {
+  font-size: 30px;
+  line-height: 20px;
+}
+
+h2 :last-child {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.article {
+  margin-top: 13vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow-y: hidden;
+}
+
+.article .glitch-photo {
+  width: auto;
+  height: 80vh;
 }
 
 header {
