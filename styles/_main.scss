@@ -104,24 +104,7 @@ body{
 .main_photo{
     transform: translateX(10%);
 }
-@media screen and (max-width:768px){
-    .main{
-        h1{
-            line-height: 50px;
-            font-size: 20px;
-        }
-       .social{
-           //transform: rotate(0deg);
-           font-size: 15px;
-           bottom: 25%;
-        }
-       .main_photo{
-           max-height: 35%;
-           width: auto;
-           margin-bottom: 3%;
-    }
-    }
-}
+
 .horbar{
     position: absolute;
     color: #FFFFFF;
@@ -144,6 +127,7 @@ h2{
     line-height: 23px;
     text-indent: 5px;
     font-family: 'Prata', serif;
+    transform: translate(0%, 300%);
     :first-child{
         font-size: 30px;
 
@@ -165,3 +149,72 @@ h2{
         height: 80vh;
     }
 }
+.about{
+    background: #FFFFFF;
+    color:#000000;
+    padding: 20px;
+    padding-right: 100px;
+    max-width: 60%;
+    .side_nav{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        right: 3%;
+        font-size: 2.7rem;
+        bottom: 50vh;
+        transform: translate(-50%, 50%);
+        a{
+        color: #000000;
+        text-decoration: none;}
+        :first-child{
+            color: #27272769;
+        }
+    }
+    h3{
+        font-family: 'Prata', serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 96px;
+        line-height: 124px;
+        text-align: right;
+        text-indent: 5px;
+        text-transform: capitalize;
+        font-feature-settings: 'pnum' on, 'onum' on;
+    }
+    p{
+        //height: 30%;
+    }
+    button{
+        background: #FFFFFF;
+        width: 177px;
+        height: 33px;
+        box-shadow: -1px -2px 2px #FFFFFF, 0px 1px 3px rgba(0, 0, 0, 0.55), inset 0px -0.5px 3px #FFFFFF, inset 0.5px 0.1px 3px rgba(0, 0, 0, 0.2);
+        border-radius: 31px;
+    }
+}
+@media screen and (max-width:768px){
+    .main{
+        h1{
+            line-height: 50px;
+            font-size: 20px;
+        }
+       .social{
+           //transform: rotate(0deg);
+           font-size: 15px;
+           bottom: 25%;
+        }
+       .main_photo{
+           max-height: 35%;
+           width: auto;
+           margin-bottom: 3%;
+    }
+    }
+    .about{
+        h3{
+            color:#000000;
+            font-size: 36px;
+            line-height: 60px;
+        }
+    }}
