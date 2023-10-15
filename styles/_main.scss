@@ -150,11 +150,13 @@ h2{
     }
 }
 .about{
+    border-top-left-radius: 0.5rem;
     background: #FFFFFF;
     color:#000000;
     padding: 20px;
     padding-right: 100px;
     max-width: 60%;
+    margin-bottom: 3%;
     .side_nav{
         position: absolute;
         display: flex;
@@ -183,8 +185,12 @@ h2{
         text-transform: capitalize;
         font-feature-settings: 'pnum' on, 'onum' on;
     }
-    p{
+    .Omnie{
         //height: 30%;
+        text-align: left;
+        font-weight: lighter;
+        letter-spacing: 0.05rem;
+        //font-variant: small-caps;
     }
     button{
         background: #FFFFFF;
