@@ -146,7 +146,9 @@ h2{
     overflow-y: hidden;
     .glitch-photo{
         width: auto;
-        height: 80vh;
+        height: 40vh;
+        padding-left: 20vh;
+        padding-right: 20vh;
     }
 }
 .about{
@@ -155,7 +157,7 @@ h2{
     color:#000000;
     padding: 20px;
     padding-right: 100px;
-    max-width: 60%;
+   // max-width: 60%;
     margin-bottom: 3%;
     .side_nav{
         position: absolute;
@@ -200,7 +202,9 @@ h2{
         border-radius: 31px;
     }
 }
+
 @media screen and (max-width:768px){
+   // *{color: red;}
     .main{
         h1{
             line-height: 50px;
@@ -218,9 +222,18 @@ h2{
     }
     }
     .about{
+        height: 75rem;
+        width: 97rem;
+        overflow-y: scroll;
+        padding-bottom: 50rem;
+        font-size: x-small;
         h3{
             color:#000000;
             font-size: 36px;
             line-height: 60px;
         }
     }}
+    @media screen and (min-width:768px){
+         .about{
+            max-width: 60%;
+         }}
