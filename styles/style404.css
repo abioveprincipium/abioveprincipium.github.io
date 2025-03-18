@@ -4,8 +4,6 @@
 body {
     background: rgb(255,130,156);
     background: radial-gradient(circle at 30% 50%, rgba(255,95,129,1) 0%, rgba(168,48,81,1) 13%, rgba(21,8,36,1) 52%);
-    
-    
     background-size: 100% 100%;
     background-attachment: fixed;
     color: #ffffff;

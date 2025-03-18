@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Przycisk ze światełkiem</title>
+  <style>
+    .svg-button {
+      position: relative;
+      display: inline-block;
+      background: #fff;
+      color: #4F3C6E;
+      font-family: sans-serif;
+      font-size: 16px;
+
+      /* "Dodatkowy" padding wokół tekstu */
+      padding: 12px 24px;
+
+      /* Promień zaokrąglenia przycisku */
+      border-radius: 30px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .svg-button span {
+      position: relative;
+      z-index: 2; /* Tekst ponad warstwą SVG */
+    }
+
+    .svg-button svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      z-index: 1;  /* Pod tekstem, nad tłem */
+    }
+
+    /* -------------------------
+       STAN POCZĄTKOWY:
+       - pełna, szara linia (2px),
+       - brak segmentów (dasharray=0).
+       ------------------------- */
+    .svg-button rect {
+      fill: none;         /* środek przezroczysty */
+      stroke: #c2bec8;    /* szary obrys */
+      stroke-width: 2px;
+      stroke-dasharray: 0;
+      stroke-dashoffset: 0;
+
+      transition: stroke 0.3s; /* Łagodna zmiana koloru */
+    }
+
+    /* -------------------------
+       HOVER:
+       - pojedynczy krótki segment
+         (dasharray: 20 449 => łącznie 469),
+       - startowy dashoffset=469 => segment „schowany”
+         i w animacji schodzi do 0 => „obiega” ramkę,
+       - kolor pomarańczowy,
+       - animacja w pętli (infinite).
+       ------------------------- */
+    .svg-button:hover rect {
+      stroke: orange;
+      stroke-dasharray: 20 449;
+      stroke-dashoffset: 469;
+      animation: dash 2s linear infinite;
+    }
+
+    @keyframes dash {
+      0% {
+        stroke-dashoffset: 469;  /* segment na starcie poza widoczną częścią */
+      }
+      100% {
+        stroke-dashoffset: 0;    /* segment obiega cały obwód i "kończy" w punkcie startu */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="svg-button">
+    <span>Najedź mnie</span>
+    <!-- Prostokąt 200x60 z zaokrągleniem 30 -->
+    <svg viewBox="0 0 200 60" preserveAspectRatio="none">
+      <rect x="0" y="0" width="100%" height="100%" rx="30" ry="30" />
+    </svg>
+  </div>
+
+</body>
+</html>

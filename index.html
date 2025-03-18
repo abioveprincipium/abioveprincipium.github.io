@@ -1,34 +1,99 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="description" content="#"/>
-    <meta name="keywords" content="#"/>
-    <meta name="author" content="AJG"/>
-    <meta name="copyright" content="copyright AJG"/>
-    <meta name="robots" content="follow"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
-    <link rel="shortcut icon" href="favicon.ico"/>
-    <title>Alicja Grądys</title>
-  </head>
-  <body>
-      <header>
-          <div class="logo"> <img src="img/logo.png"></div>
-          <nav>
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1DR5PK3VHV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-          </nav>
-      </header>
-  <div class="container">
-      <main>
-          <h1 class="error-code">404</h1>
-          <h2 class="message">There is no light down here.</h2>
-          <p class="description">
-              Just because your path is different doesn't mean you are lost.
-              The page you are looking for is not available right now . . .
-              Lounching soon.
-          </p>
-      </main>
-  </div>
-  </body>
+  gtag('config', 'G-1DR5PK3VHV');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script src="script.js" defer></script>
+    <script src="sat.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@400..700&family=Libre+Baskerville&family=Oranienbaum&family=Prata&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <main class="content-container">
+            <img id="sat" src="img/s.png">
+            <div class="logo"><img src="img/logo.png"></div>
+
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="#"><div class="svg-button">
+                        <span>  Home  </span>
+                        <!-- Prostokąt 200x60 z zaokrągleniem 30 -->
+                        <svg viewBox="0 0 200 60" preserveAspectRatio="none">
+                          <rect x="0" y="0" width="100%" height="100%" rx="30" ry="30" />
+                        </svg>
+                      </div></a></li>
+                      <li> <a href="projects.html" class="nav-link second">
+                        <span class="text">Projects</span>
+                      </a></li>
+                </ul>
+            </nav>
+            <section class="block-a">
+                <div class="photo"></div>
+            </section>
+            <!-- <section class="sat"><img id="sat" src="img/s.png"></section> -->
+            <section class="block-b">
+                <h1>Alicja Grądys</h1>
+                <h2>Syncing Work to the Right Frequency</h2>
+                <button id="startOrbit"> Try me!</button>
+                <p>I get along with radio waves just as well as I do with people. As a mobile telecommunications engineer, I specialize in RF systems, digital signal processing, and software-defined radio. My work is all about solving complex problems, making quick connections, and approaching challenges with creativity.
+                    <br><br>
+                    I thrive in teamwork because the best ideas come from great conversations. Technology evolves constantly, and I don’t just keep up — I stay one step ahead. I work analytically, and always keep my eyes on the goal. After work, I unwind with watercolor painting — my way of exploring creativity in a different form.</p>
+                </section>
+
+            <section class="block-c">
+                <h2>Contact</h2>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://github.com/abioveprincipium" target="_blank">
+                            <img class="icon" src="/img/github-icon.png" alt="GitHub">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://pl.linkedin.com/in/alicja-gradys" target="_blank">
+                            <img class="icon" src="img/linkedin-icon.svg" alt="LinkedIn">
+                        </a>
+                    </li>
+                    <li>
+                        <a id="email-link" href="#" onclick="showEmail();">
+                            <img class="icon" src="img/hidden-email-icon.png" alt="Show Email">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="block-d">
+                <div class="duvet">
+                    <img class="svg" src="/img/r.png">
+                    <h2>Tech stack</h2><a href="#" class="heart-link">
+                      <img class="heart-red" src="img/h.png" alt="Heart">
+                    </a>
+                    <div class="barr">
+                        <ul>
+                            <li> MatLab</li>
+                            <li>  JavaScript</li>
+                            <li>Python </li>
+                            <li> DSP </li>
+                            <li> SDR </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
 </html>

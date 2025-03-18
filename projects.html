@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1DR5PK3VHV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1DR5PK3VHV');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@400..700&family=Libre+Baskerville&family=Oranienbaum&family=Prata&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <main class="content-container">
+            <div class="logo"><img src="img/logo.png"></div>
+
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html"><div class="svg-button">
+                        <span>  Home  </span>
+                        <!-- Prostokąt 200x60 z zaokrągleniem 30 -->
+                        <svg viewBox="0 0 200 60" preserveAspectRatio="none">
+                          <rect x="0" y="0" width="100%" height="100%" rx="30" ry="30" />
+                        </svg>
+                      </div></a></li>
+                    <li> <a href="#" class="nav-link second">
+                        <span class="text">Projects</span>
+                      </a></li>
+                </ul>
+            </nav>
+            <section class="block-a">
+                <div class="gallery">
+                    <div class="slide active"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                </div>
+                <div class="gallery-nav">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </section>
+            <section class="block-b">
+                <h1 >About project</h1>
+                <h2 id="project-title">Processing Satellite Signals from NOAA-18 and NOAA-19 APT System</h2>
+                <p id="project-desc">Ever wondered how raw signals from space transform into stunning satellite images? This project takes signals from NOAA-18 and NOAA-19, demodulates them, and decodes the data to create visual representations of telemetry. Using advanced FM and AM demodulation techniques, the system processes APT 137MHz .wav files, extracting meaningful image data. Whether you're a space enthusiast or a researcher, this project offers an exciting look into satellite signal processing, all powered by Python and Jupyter Notebook.</p>
+            </section>
+
+            <section class="block-c" style="display:flex;">
+                <div class="note">
+                <p id="pers"> 87% </p>
+                </div>
+                <p id="tech-stack"><span class="first-word">Python</span> <br> on JupyterLab, GNURadio</p>
+            </section>
+            <section class="block-d">
+                <div class="duvet">
+                    <img class="svg" src="/img/r.png">
+                    <h2>Link</h2><a href="#" class="heart-link">
+                      <img class="heart-red" src="img/h.png" alt="Heart">
+                    </a>
+                    <div class="barr">
+                        <a id="project-link" href="#" target="_blank">
+                          <span>Look at project here</span>
+                          <img src="/img/a.png" alt="Arrow">
+                        </a>
+                      </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
