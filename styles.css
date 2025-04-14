@@ -246,21 +246,18 @@ body {
     display: flex;
 }
 .slide:nth-child(1) {
-    background-image: url("img/1.png");
-    background-size: 50% 50%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url("img/1.gif");
+    background-repeat: repeat;
   }
 .slide:nth-child(2){
-  background-image: url("img/3.png");
+  background-image: url("img/2.gif");
   background-size: 50% 50%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   }
 .slide:nth-child(3){
-  background-image: url("img/2.png");
+  background-image: url("img/3.gif");
   background-size: 50% 50%;
   background-size: cover;
   background-position: center;
@@ -268,7 +265,7 @@ body {
   }
   .dot:nth-child(1) {
     background-color: rgb(41, 17, 5);
-      background-image: url("img/1.png");
+      background-image: url("img/1.gif");
       background-size: 50% 50%;
       background-size: cover;
       background-position: center;
@@ -277,7 +274,7 @@ body {
   .dot:nth-child(2) {
   
     background-color: rgb(41, 17, 5);
-    background-image: url("img/3.png");
+    background-image: url("img/2.gif");
     background-size: 50% 50%;
     background-size: cover;
     background-position: center;
@@ -285,7 +282,7 @@ body {
     }
   .dot:nth-child(3) {
     background-color: rgb(41, 17, 5);
-    background-image: url("img/2.png");
+    background-image: url("img/3.gif");
     background-size: 50% 50%;
     background-size: cover;
     background-position: center;
@@ -366,6 +363,11 @@ body {
 
   margin-top: clamp(1rem, calc(1rem + 4vw), 5rem);
 
+}
+.block-b footer{
+  margin-top: clamp(3rem, calc(1rem + 4vw), 5rem);
+  font-size:xx-small;
+  color: rgb(126, 126, 126);
 }
 .block-c {
     grid-area: C;
@@ -473,6 +475,7 @@ position: relative;
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  padding: 10px 0;
 }
 .barr a{
   text-decoration: none;
@@ -492,8 +495,6 @@ position: relative;
 }
 .barr ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -506,8 +507,9 @@ position: relative;
 .barr li {
   background-color: #fff;
   border-radius: 10px;
-  padding: 2px 4px;
-  margin: 10px 3px;
+  padding: 3px 3px;
+  margin: 2px;
+  max-height: 40px;
 }
 
 .heart-link {

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const projectData = [
     {
       title: "Processing Satellite Signals from NOAA-18 and NOAA-19 APT System",
-      desc: "Ever wondered how raw signals from space transform into stunning satellite images? This project takes signals from NOAA-18 and NOAA-19, demodulates them, and decodes the data to create visual representations of telemetry. Using advanced FM and AM demodulation techniques, the system processes APT 137MHz .wav files, extracting meaningful image data. Whether you're a space enthusiast or a researcher, this project offers an exciting look into satellite signal processing, all powered by Python and Jupyter Notebook.",
+      desc: "Ever wondered how raw signals from space transform into stunning satellite images? This project takes signals from NOAA-18 and NOAA-19, demodulates them, and decodes the data to create visual representations of telemetry. Using advanced FM and AM demodulation techniques, the system processes APT 137MHz .wav files, extracting meaningful image data. This project offers an exciting look into satellite signal processing, all powered by Python and Jupyter Notebook.",
       stack: "Python, GNURadio",
       per: "87%",
       link: "https://github.com/abioveprincipium/Noaa-demo_deco.git",
